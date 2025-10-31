@@ -7,6 +7,10 @@ public class DummyService {
 
     public void checkNull() {
         String str = null;
-        System.out.println(str.length());
+        try {
+            System.out.println(str.length());
+        } catch(NullPointerException e) {
+            System.out.println("NullPointException");
+        }
     }
 }
